@@ -1,9 +1,7 @@
-#include "Window.h"
+#include "Game.h"
 
 int main() {
-	Window window("Moonvaders", 1000, 800);	
-	while(window.isOpen()) {
-		window.update();
-	}
+	Game moonvaders;
+	moonvaders.run();
 	return 0;
 }

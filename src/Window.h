@@ -9,6 +9,7 @@
 class Window {
 public:
 	Window(const std::string &title, int width, int height);
+	Window() = default;
 	~Window();
 	void update() const;
 	inline bool isOpen() const { return !glfwWindowShouldClose(_window); }
